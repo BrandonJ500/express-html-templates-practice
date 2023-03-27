@@ -1,0 +1,22 @@
+{
+  "name": "express-html-templates-practice",
+  "version": "1.0.0",
+  "description": "learning html templates with express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonJ500/express-html-templates-practice.git"
+  },
+  "author": "Brandon Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandonJ500/express-html-templates-practice/issues"
+  },
+  "homepage": "https://github.com/BrandonJ500/express-html-templates-practice#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
