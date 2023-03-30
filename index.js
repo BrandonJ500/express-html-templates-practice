@@ -11,12 +11,12 @@ app.set('view engine', "ejs");
 app.set('views', path.join(__dirname, '/views'))
 
 app.get("/",(req,res)=>{
-    res.render("home.ejs");
+
+    res.render("home.ejs", {name: "Home"});
 }) 
 app.get('/r/:subreddit', (req,res)=> {
     const {subreddit} = req.params
     const data = subredditData[subreddit]
-    console.log(data)
     res.render("subreddit", {...data})
 })
 
@@ -29,7 +29,7 @@ app.get('/cats', (req,res)=>{
 app.get('/rand', (req,res)=> {
     const num =  Math.floor((Math.random() * 10) + 1);
 
-    res.render('random', {rand: num});   
+    res.render('random', {rand: num, name:"Random Number"});   
 })
 
 app.listen(3000, ()=> {
